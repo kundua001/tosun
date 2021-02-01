@@ -1,0 +1,225 @@
+19:33:55.408 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [run,86] - received push data: {"type":"dom","data":"{\"dom\":\"DEFAULT_GROUP@@ruoyi-system\",\"name\":\"DEFAULT_GROUP@@ruoyi-system\",\"cacheMillis\":10000,\"lastRefTime\":1610969635407,\"checksum\":\"b3eaa86541f902eea7299612b9d0d3d5\",\"useSpecifiedURL\":false,\"clusters\":\"DEFAULT\",\"env\":\"\",\"hosts\":[],\"metadata\":{}}","lastRefTime":84977701406538} from /192.168.1.4
+19:39:18.302 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+19:39:19.738 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - [<clinit>,212] - LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+19:39:19.811 [main] INFO  c.a.n.c.c.i.Limiter - [<clinit>,54] - limitTime:5.0
+19:39:19.866 [main] INFO  c.a.n.c.c.u.JvmUtil - [<clinit>,49] - isMultiInstance:false
+19:39:19.915 [main] INFO  c.r.s.RuoYiSystemApplication - [logStartupProfileInfo,655] - The following profiles are active: dev
+19:39:25.783 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9201"]
+19:39:25.784 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+19:39:25.784 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+19:39:26.078 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+19:39:27.299 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1,master} inited
+19:39:27.301 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,132] - dynamic-datasource - load a datasource named [master] success
+19:39:27.301 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,237] - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+19:39:31.648 [main] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+19:39:32.131 [main] INFO  c.a.n.client.naming - [call,64] - initializer namespace from System Property :null
+19:39:32.132 [main] INFO  c.a.n.client.naming - [call,73] - initializer namespace from System Environment :null
+19:39:32.134 [main] INFO  c.a.n.client.naming - [call,83] - initializer namespace from System Property :null
+19:39:32.665 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+19:39:32.762 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+19:39:32.770 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+19:39:34.538 [main] INFO  c.a.n.client.naming - [addListener,83] - [LISTENER] adding DEFAULT_GROUP@@ruoyi-system with DEFAULT to listener map
+19:39:34.543 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9201"]
+19:39:34.587 [main] INFO  c.a.n.client.naming - [addBeatInfo,81] - [BEAT] adding beat: BeatInfo{port=9201, ip='192.168.1.4', weight=1.0, serviceName='DEFAULT_GROUP@@ruoyi-system', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+19:39:34.588 [main] INFO  c.a.n.client.naming - [registerService,223] - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@ruoyi-system with instance: Instance{instanceId='null', ip='192.168.1.4', port=9201, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+19:39:34.596 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,71] - nacos registry, DEFAULT_GROUP ruoyi-system 192.168.1.4:9201 register finished
+19:39:34.776 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+19:39:34.802 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+19:39:34.908 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+19:39:35.207 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_1
+19:39:35.209 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: editUsingPUT_1
+19:39:35.214 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_1
+19:39:35.226 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_1
+19:39:35.228 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_1
+19:39:35.244 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_2
+19:39:35.248 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: editUsingPUT_2
+19:39:35.254 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: exportUsingPOST_1
+19:39:35.256 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_2
+19:39:35.260 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_2
+19:39:35.263 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_2
+19:39:35.271 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_3
+19:39:35.272 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: clearCacheUsingDELETE_1
+19:39:35.275 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: editUsingPUT_3
+19:39:35.282 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: exportUsingPOST_2
+19:39:35.285 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_3
+19:39:35.288 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_3
+19:39:35.291 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_3
+19:39:35.295 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_4
+19:39:35.303 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: exportUsingPOST_3
+19:39:35.305 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_4
+19:39:35.307 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_4
+19:39:35.318 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_5
+19:39:35.320 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: editUsingPUT_4
+19:39:35.322 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_4
+19:39:35.332 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_5
+19:39:35.334 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_5
+19:39:35.341 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: treeselectUsingGET_1
+19:39:35.347 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_6
+19:39:35.349 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: editUsingPUT_5
+19:39:35.351 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_5
+19:39:35.358 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_6
+19:39:35.360 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_6
+19:39:35.372 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_7
+19:39:35.373 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: cleanUsingDELETE_1
+19:39:35.380 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: exportUsingPOST_4
+19:39:35.383 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_7
+19:39:35.385 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_7
+19:39:35.391 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_8
+19:39:35.393 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: editUsingPUT_6
+19:39:35.399 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: exportUsingPOST_5
+19:39:35.401 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_6
+19:39:35.404 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_8
+19:39:35.405 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: optionselectUsingGET_1
+19:39:35.407 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_8
+19:39:35.439 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_9
+19:39:35.444 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: editUsingPUT_7
+19:39:35.452 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: exportUsingPOST_6
+19:39:35.455 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_7
+19:39:35.459 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_9
+19:39:35.460 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: optionselectUsingGET_2
+19:39:35.463 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_9
+19:39:35.468 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_10
+19:39:35.470 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: changeStatusUsingPUT_1
+19:39:35.471 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: editUsingPUT_8
+19:39:35.490 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: exportUsingPOST_7
+19:39:35.495 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_8
+19:39:35.497 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_9
+19:39:35.499 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_10
+19:39:35.537 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_10
+19:39:35.539 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_10
+19:39:35.549 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_11
+19:39:35.575 [com.alibaba.nacos.client.naming.updater] INFO  c.a.n.client.naming - [processServiceJson,191] - new ips(1) service: DEFAULT_GROUP@@ruoyi-system@@DEFAULT -> [{"instanceId":"192.168.1.4#9201#DEFAULT#DEFAULT_GROUP@@ruoyi-system","ip":"192.168.1.4","port":9201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-system","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000}]
+19:39:35.586 [com.alibaba.nacos.client.naming.updater] INFO  c.a.n.client.naming - [processServiceJson,228] - current ips:(1) service: DEFAULT_GROUP@@ruoyi-system@@DEFAULT -> [{"instanceId":"192.168.1.4#9201#DEFAULT#DEFAULT_GROUP@@ruoyi-system","ip":"192.168.1.4","port":9201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-system","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000}]
+19:39:35.597 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [run,86] - received push data: {"type":"dom","data":"{\"hosts\":[{\"ip\":\"192.168.1.4\",\"port\":9201,\"valid\":true,\"healthy\":true,\"marked\":false,\"instanceId\":\"192.168.1.4#9201#DEFAULT#DEFAULT_GROUP@@ruoyi-system\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"enabled\":true,\"weight\":1.0,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@ruoyi-system\",\"ephemeral\":true}],\"dom\":\"DEFAULT_GROUP@@ruoyi-system\",\"name\":\"DEFAULT_GROUP@@ruoyi-system\",\"cacheMillis\":10000,\"lastRefTime\":1610969975596,\"checksum\":\"080b54a198a6ec6a714f63bfccf2c13e\",\"useSpecifiedURL\":false,\"clusters\":\"DEFAULT\",\"env\":\"\",\"metadata\":{}}","lastRefTime":285598504050} from /192.168.1.4
+19:39:35.603 [main] INFO  c.r.s.RuoYiSystemApplication - [logStarted,61] - Started RuoYiSystemApplication in 19.26 seconds (JVM running for 24.369)
+19:39:35.615 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,262] - [fixed-127.0.0.1_8848] [subscribe] ruoyi-system+DEFAULT_GROUP
+19:39:35.618 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=ruoyi-system, group=DEFAULT_GROUP, cnt=1
+19:39:35.618 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,262] - [fixed-127.0.0.1_8848] [subscribe] ruoyi-system.yml+DEFAULT_GROUP
+19:39:35.618 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=ruoyi-system.yml, group=DEFAULT_GROUP, cnt=1
+19:39:35.619 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,262] - [fixed-127.0.0.1_8848] [subscribe] ruoyi-system-dev.yml+DEFAULT_GROUP
+19:39:35.619 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=ruoyi-system-dev.yml, group=DEFAULT_GROUP, cnt=1
+19:39:36.437 [RMI TCP Connection(2)-192.168.1.4] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:32:37.622 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+22:32:39.332 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - [<clinit>,212] - LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+22:32:39.421 [main] INFO  c.a.n.c.c.i.Limiter - [<clinit>,54] - limitTime:5.0
+22:32:39.481 [main] INFO  c.a.n.c.c.u.JvmUtil - [<clinit>,49] - isMultiInstance:false
+22:32:39.537 [main] INFO  c.r.s.RuoYiSystemApplication - [logStartupProfileInfo,655] - The following profiles are active: dev
+22:32:44.861 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9201"]
+22:32:44.862 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:32:44.863 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+22:32:45.500 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:32:46.710 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1,master} inited
+22:32:46.712 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [addDataSource,132] - dynamic-datasource - load a datasource named [master] success
+22:32:46.712 [main] INFO  c.b.d.d.DynamicRoutingDataSource - [afterPropertiesSet,237] - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+22:32:50.292 [main] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+22:32:50.711 [main] INFO  c.a.n.client.naming - [call,64] - initializer namespace from System Property :null
+22:32:50.712 [main] INFO  c.a.n.client.naming - [call,73] - initializer namespace from System Environment :null
+22:32:50.714 [main] INFO  c.a.n.client.naming - [call,83] - initializer namespace from System Property :null
+22:32:51.363 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+22:32:51.452 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:32:51.459 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:32:53.088 [main] INFO  c.a.n.client.naming - [addListener,83] - [LISTENER] adding DEFAULT_GROUP@@ruoyi-system with DEFAULT to listener map
+22:32:53.093 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9201"]
+22:32:53.191 [main] INFO  c.a.n.client.naming - [addBeatInfo,81] - [BEAT] adding beat: BeatInfo{port=9201, ip='192.168.1.4', weight=1.0, serviceName='DEFAULT_GROUP@@ruoyi-system', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+22:32:53.192 [main] INFO  c.a.n.client.naming - [registerService,223] - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@ruoyi-system with instance: Instance{instanceId='null', ip='192.168.1.4', port=9201, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+22:32:53.196 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,71] - nacos registry, DEFAULT_GROUP ruoyi-system 192.168.1.4:9201 register finished
+22:32:53.336 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+22:32:53.358 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+22:32:53.446 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+22:32:53.677 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_1
+22:32:53.680 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: editUsingPUT_1
+22:32:53.683 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_1
+22:32:53.695 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_1
+22:32:53.697 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_1
+22:32:53.710 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_2
+22:32:53.714 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: editUsingPUT_2
+22:32:53.720 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: exportUsingPOST_1
+22:32:53.722 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_2
+22:32:53.724 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_2
+22:32:53.727 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_2
+22:32:53.733 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_3
+22:32:53.735 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: clearCacheUsingDELETE_1
+22:32:53.736 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: editUsingPUT_3
+22:32:53.742 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: exportUsingPOST_2
+22:32:53.744 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_3
+22:32:53.747 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_3
+22:32:53.749 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_3
+22:32:53.754 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_4
+22:32:53.759 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: exportUsingPOST_3
+22:32:53.762 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_4
+22:32:53.764 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_4
+22:32:53.773 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_5
+22:32:53.775 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: editUsingPUT_4
+22:32:53.777 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_4
+22:32:53.787 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_5
+22:32:53.789 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_5
+22:32:53.794 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: treeselectUsingGET_1
+22:32:53.800 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_6
+22:32:53.802 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: editUsingPUT_5
+22:32:53.803 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_5
+22:32:53.808 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_6
+22:32:53.810 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_6
+22:32:53.821 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_7
+22:32:53.823 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: cleanUsingDELETE_1
+22:32:53.829 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: exportUsingPOST_4
+22:32:53.832 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_7
+22:32:53.834 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_7
+22:32:53.840 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_8
+22:32:53.841 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: editUsingPUT_6
+22:32:53.847 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: exportUsingPOST_5
+22:32:53.849 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_6
+22:32:53.851 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_8
+22:32:53.852 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: optionselectUsingGET_1
+22:32:53.853 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_8
+22:32:53.876 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_9
+22:32:53.880 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: editUsingPUT_7
+22:32:53.893 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: exportUsingPOST_6
+22:32:53.896 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_7
+22:32:53.899 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_9
+22:32:53.900 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: optionselectUsingGET_2
+22:32:53.903 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_9
+22:32:53.908 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: addUsingPOST_10
+22:32:53.910 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: changeStatusUsingPUT_1
+22:32:53.913 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: editUsingPUT_8
+22:32:53.924 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: exportUsingPOST_7
+22:32:53.930 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_8
+22:32:53.932 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_9
+22:32:53.934 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: getInfoUsingGET_10
+22:32:53.971 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_10
+22:32:53.973 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: removeUsingDELETE_10
+22:32:53.979 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listUsingGET_11
+22:32:54.021 [main] INFO  c.r.s.RuoYiSystemApplication - [logStarted,61] - Started RuoYiSystemApplication in 17.401 seconds (JVM running for 21.312)
+22:32:54.033 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,262] - [fixed-127.0.0.1_8848] [subscribe] ruoyi-system+DEFAULT_GROUP
+22:32:54.034 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=ruoyi-system, group=DEFAULT_GROUP, cnt=1
+22:32:54.035 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,262] - [fixed-127.0.0.1_8848] [subscribe] ruoyi-system.yml+DEFAULT_GROUP
+22:32:54.035 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=ruoyi-system.yml, group=DEFAULT_GROUP, cnt=1
+22:32:54.036 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,262] - [fixed-127.0.0.1_8848] [subscribe] ruoyi-system-dev.yml+DEFAULT_GROUP
+22:32:54.036 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=ruoyi-system-dev.yml, group=DEFAULT_GROUP, cnt=1
+22:32:54.110 [com.alibaba.nacos.client.naming.updater] INFO  c.a.n.client.naming - [processServiceJson,191] - new ips(1) service: DEFAULT_GROUP@@ruoyi-system@@DEFAULT -> [{"instanceId":"192.168.1.4#9201#DEFAULT#DEFAULT_GROUP@@ruoyi-system","ip":"192.168.1.4","port":9201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-system","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:32:54.118 [com.alibaba.nacos.client.naming.updater] INFO  c.a.n.client.naming - [processServiceJson,228] - current ips:(1) service: DEFAULT_GROUP@@ruoyi-system@@DEFAULT -> [{"instanceId":"192.168.1.4#9201#DEFAULT#DEFAULT_GROUP@@ruoyi-system","ip":"192.168.1.4","port":9201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-system","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:32:54.198 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [run,86] - received push data: {"type":"dom","data":"{\"hosts\":[{\"ip\":\"192.168.1.4\",\"port\":9201,\"valid\":true,\"healthy\":true,\"marked\":false,\"instanceId\":\"192.168.1.4#9201#DEFAULT#DEFAULT_GROUP@@ruoyi-system\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"enabled\":true,\"weight\":1.0,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@ruoyi-system\",\"ephemeral\":true}],\"dom\":\"DEFAULT_GROUP@@ruoyi-system\",\"name\":\"DEFAULT_GROUP@@ruoyi-system\",\"cacheMillis\":10000,\"lastRefTime\":1610980374197,\"checksum\":\"080b54a198a6ec6a714f63bfccf2c13e\",\"useSpecifiedURL\":false,\"clusters\":\"DEFAULT\",\"env\":\"\",\"metadata\":{}}","lastRefTime":10684199503142} from /192.168.1.4
+22:32:54.614 [RMI TCP Connection(8)-192.168.1.4] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:38:53.228 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [removeListener,104] - [LISTENER] removing DEFAULT_GROUP@@ruoyi-system with DEFAULT from listener map
+22:38:53.232 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,86] - De-registering from Nacos Server now...
+22:38:53.233 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [removeBeatInfo,101] - [BEAT] removing beat: DEFAULT_GROUP@@ruoyi-system:192.168.1.4:9201 from beat map.
+22:38:53.234 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [deregisterService,253] - [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@ruoyi-system with instance: Instance{instanceId='null', ip='192.168.1.4', port=9201, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+22:38:53.237 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,106] - De-registration finished.
+22:38:53.238 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,147] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+22:38:53.558 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,149] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+22:38:53.559 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,149] - com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown begin
+22:38:54.248 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [run,86] - received push data: {"type":"dom","data":"{\"dom\":\"DEFAULT_GROUP@@ruoyi-system\",\"name\":\"DEFAULT_GROUP@@ruoyi-system\",\"cacheMillis\":10000,\"lastRefTime\":1610980734247,\"checksum\":\"b3eaa86541f902eea7299612b9d0d3d5\",\"useSpecifiedURL\":false,\"clusters\":\"DEFAULT\",\"env\":\"\",\"hosts\":[],\"metadata\":{}}","lastRefTime":11044249235820} from /192.168.1.4
+22:38:54.249 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [processServiceJson,197] - removed ips(1) service: DEFAULT_GROUP@@ruoyi-system@@DEFAULT -> [{"instanceId":"192.168.1.4#9201#DEFAULT#DEFAULT_GROUP@@ruoyi-system","ip":"192.168.1.4","port":9201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-system","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:38:54.250 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [processServiceJson,228] - current ips:(0) service: DEFAULT_GROUP@@ruoyi-system@@DEFAULT -> []
+22:38:56.583 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,152] - com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown stop
+22:38:56.583 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,370] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+22:38:59.586 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,118] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+22:39:02.589 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,122] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+22:39:02.590 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,132] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+22:39:02.591 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,134] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+22:39:02.591 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,374] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+22:39:02.592 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,715] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+22:39:02.593 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,718] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+22:39:02.757 [SpringContextShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,217] - dynamic-datasource start closing ....
+22:39:02.765 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+22:39:02.783 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+22:39:02.784 [SpringContextShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - [destroy,221] - dynamic-datasource all closed success,bye

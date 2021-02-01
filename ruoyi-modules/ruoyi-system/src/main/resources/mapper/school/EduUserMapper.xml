@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.EduUserMapper">
+    
+    <resultMap type="EduUser" id="EduUserResult">
+        <result property="id"    column="id"    />
+        <result property="userId"    column="user_id"    />
+        <result property="schoolId"    column="school_id"    />
+        <result property="classId"    column="class_id"    />
+        <result property="name"    column="name"    />
+        <result property="email"    column="email"    />
+        <result property="mobile"    column="mobile"    />
+        <result property="sex"    column="sex"    />
+        <result property="logoUrl"    column="logo_url"    />
+        <result property="status"    column="status"    />
+        <result property="delFlag"    column="del_flag"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateBy"    column="update_by"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="remark"    column="remark"    />
+    </resultMap>
+
+    <sql id="selectEduUserVo">
+        select id, user_id, school_id, class_id, name, email, mobile, sex, logo_url, status, del_flag, create_by, create_time, update_by, update_time, remark from edu_user
+    </sql>
+
+    <select id="selectEduUserList" parameterType="EduUser" resultMap="EduUserResult">
+        <include refid="selectEduUserVo"/>
+        <where>  
+            <if test="userId != null "> and user_id = #{userId}</if>
+            <if test="schoolId != null "> and school_id = #{schoolId}</if>
+            <if test="classId != null "> and class_id = #{classId}</if>
+            <if test="name != null  and name != ''"> and name like concat('%', #{name}, '%')</if>
+            <if test="email != null  and email != ''"> and email = #{email}</if>
+            <if test="mobile != null  and mobile != ''"> and mobile = #{mobile}</if>
+            <if test="sex != null  and sex != ''"> and sex = #{sex}</if>
+            <if test="logoUrl != null  and logoUrl != ''"> and logo_url = #{logoUrl}</if>
+            <if test="status != null  and status != ''"> and status = #{status}</if>
+        </where>
+    </select>
+    
+    <select id="selectEduUserById" parameterType="Long" resultMap="EduUserResult">
+        <include refid="selectEduUserVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertEduUser" parameterType="EduUser" useGeneratedKeys="true" keyProperty="id">
+        insert into edu_user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">user_id,</if>
+            <if test="schoolId != null">school_id,</if>
+            <if test="classId != null">class_id,</if>
+            <if test="name != null and name != ''">name,</if>
+            <if test="email != null">email,</if>
+            <if test="mobile != null">mobile,</if>
+            <if test="sex != null">sex,</if>
+            <if test="logoUrl != null">logo_url,</if>
+            <if test="status != null">status,</if>
+            <if test="delFlag != null">del_flag,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateBy != null">update_by,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="remark != null">remark,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">#{userId},</if>
+            <if test="schoolId != null">#{schoolId},</if>
+            <if test="classId != null">#{classId},</if>
+            <if test="name != null and name != ''">#{name},</if>
+            <if test="email != null">#{email},</if>
+            <if test="mobile != null">#{mobile},</if>
+            <if test="sex != null">#{sex},</if>
+            <if test="logoUrl != null">#{logoUrl},</if>
+            <if test="status != null">#{status},</if>
+            <if test="delFlag != null">#{delFlag},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="remark != null">#{remark},</if>
+         </trim>
+    </insert>
+
+    <update id="updateEduUser" parameterType="EduUser">
+        update edu_user
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="userId != null">user_id = #{userId},</if>
+            <if test="schoolId != null">school_id = #{schoolId},</if>
+            <if test="classId != null">class_id = #{classId},</if>
+            <if test="name != null and name != ''">name = #{name},</if>
+            <if test="email != null">email = #{email},</if>
+            <if test="mobile != null">mobile = #{mobile},</if>
+            <if test="sex != null">sex = #{sex},</if>
+            <if test="logoUrl != null">logo_url = #{logoUrl},</if>
+            <if test="status != null">status = #{status},</if>
+            <if test="delFlag != null">del_flag = #{delFlag},</if>
+            <if test="createBy != null">create_by = #{createBy},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="remark != null">remark = #{remark},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteEduUserById" parameterType="Long">
+        delete from edu_user where id = #{id}
+    </delete>
+
+    <delete id="deleteEduUserByIds" parameterType="String">
+        delete from edu_user where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

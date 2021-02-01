@@ -1,0 +1,72 @@
+20:10:38.774 [reactor-http-nio-4] ERROR c.r.g.h.GatewayExceptionHandler - [handle,56] - [网关异常处理]请求路径:/code/gen/list,异常信息:503 SERVICE_UNAVAILABLE "Unable to find instance for ruoyi-gen"
+20:42:16.897 [com.alibaba.nacos.naming.push.receiver] ERROR c.a.n.client.naming - [run,110] - [NA] error while receiving push data
+java.net.SocketException: socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.socketReceiveOrPeekData(Native Method)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:120)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:144)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at com.alibaba.nacos.client.naming.core.PushReceiver.run(PushReceiver.java:83)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+20:42:54.024 [reactor-http-nio-2] ERROR c.r.g.h.GatewayExceptionHandler - [handle,56] - [网关异常处理]请求路径:/api/appUser/list,异常信息:404 NOT_FOUND
+20:43:05.693 [reactor-http-nio-3] ERROR c.r.g.h.GatewayExceptionHandler - [handle,56] - [网关异常处理]请求路径:/system/user/list,异常信息:404 NOT_FOUND
+20:43:05.992 [reactor-http-nio-4] ERROR c.r.g.h.GatewayExceptionHandler - [handle,56] - [网关异常处理]请求路径:/system/dept/treeselect,异常信息:404 NOT_FOUND
+20:43:05.993 [reactor-http-nio-1] ERROR c.r.g.h.GatewayExceptionHandler - [handle,56] - [网关异常处理]请求路径:/system/dict/data/type/sys_normal_disable,异常信息:404 NOT_FOUND
+20:43:06.018 [reactor-http-nio-2] ERROR c.r.g.h.GatewayExceptionHandler - [handle,56] - [网关异常处理]请求路径:/system/dict/data/type/sys_user_sex,异常信息:404 NOT_FOUND
+20:43:06.019 [reactor-http-nio-3] ERROR c.r.g.h.GatewayExceptionHandler - [handle,56] - [网关异常处理]请求路径:/system/config/configKey/sys.user.initPassword,异常信息:404 NOT_FOUND
+20:55:00.289 [reactor-http-nio-4] ERROR c.r.g.f.AuthFilter - [setUnauthorizedResponse,94] - [鉴权异常处理]请求路径:/login
+20:55:01.314 [reactor-http-nio-4] ERROR c.r.g.f.AuthFilter - [setUnauthorizedResponse,94] - [鉴权异常处理]请求路径:/login
+20:55:10.475 [reactor-http-nio-4] ERROR c.r.g.f.AuthFilter - [setUnauthorizedResponse,94] - [鉴权异常处理]请求路径:/login
+20:56:34.472 [com.alibaba.nacos.naming.push.receiver] ERROR c.a.n.client.naming - [run,110] - [NA] error while receiving push data
+java.net.SocketException: socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.socketReceiveOrPeekData(Native Method)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:120)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:144)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at com.alibaba.nacos.client.naming.core.PushReceiver.run(PushReceiver.java:83)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+21:06:34.392 [reactor-http-nio-4] ERROR c.r.g.f.AuthFilter - [setUnauthorizedResponse,94] - [鉴权异常处理]请求路径:/api/appLogin
+21:06:39.322 [reactor-http-nio-4] ERROR c.r.g.f.AuthFilter - [setUnauthorizedResponse,94] - [鉴权异常处理]请求路径:/api/appLogin
+21:48:47.960 [com.alibaba.nacos.naming.push.receiver] ERROR c.a.n.client.naming - [run,110] - [NA] error while receiving push data
+java.net.SocketException: socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.socketReceiveOrPeekData(Native Method)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:120)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:144)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at com.alibaba.nacos.client.naming.core.PushReceiver.run(PushReceiver.java:83)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+22:21:27.134 [com.alibaba.nacos.naming.push.receiver] ERROR c.a.n.client.naming - [run,110] - [NA] error while receiving push data
+java.net.SocketException: socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.socketReceiveOrPeekData(Native Method)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:120)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:144)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at com.alibaba.nacos.client.naming.core.PushReceiver.run(PushReceiver.java:83)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)

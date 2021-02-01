@@ -1,0 +1,21 @@
+21:14:38.266 [reactor-http-nio-2] ERROR c.r.g.f.AuthFilter - [setUnauthorizedResponse,94] - [鉴权异常处理]请求路径:/auth/appLogin
+21:15:24.387 [reactor-http-nio-2] ERROR c.r.g.f.AuthFilter - [setUnauthorizedResponse,94] - [鉴权异常处理]请求路径:/auth/appLogin
+21:15:59.195 [reactor-http-nio-2] ERROR c.r.g.f.AuthFilter - [setUnauthorizedResponse,94] - [鉴权异常处理]请求路径:/auth/appLogin
+21:31:29.940 [reactor-http-nio-4] ERROR c.r.g.h.GatewayExceptionHandler - [handle,56] - [网关异常处理]请求路径:/,异常信息:404 NOT_FOUND
+21:31:29.990 [reactor-http-nio-2] ERROR c.r.g.h.GatewayExceptionHandler - [handle,56] - [网关异常处理]请求路径:/csrf,异常信息:404 NOT_FOUND
+21:31:30.045 [reactor-http-nio-1] ERROR c.r.g.h.GatewayExceptionHandler - [handle,56] - [网关异常处理]请求路径:/code/v2/api-docs,异常信息:503 SERVICE_UNAVAILABLE "Unable to find instance for ruoyi-gen"
+21:32:33.281 [com.alibaba.nacos.naming.push.receiver] ERROR c.a.n.client.naming - [run,110] - [NA] error while receiving push data
+java.net.SocketException: socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.socketReceiveOrPeekData(Native Method)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:120)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:144)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at com.alibaba.nacos.client.naming.core.PushReceiver.run(PushReceiver.java:83)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)

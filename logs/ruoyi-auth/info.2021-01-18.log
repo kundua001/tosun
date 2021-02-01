@@ -1,0 +1,209 @@
+19:38:29.111 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+19:38:30.901 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - [<clinit>,212] - LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+19:38:31.004 [main] INFO  c.a.n.c.c.i.Limiter - [<clinit>,54] - limitTime:5.0
+19:38:32.076 [main] INFO  c.a.n.c.c.u.JvmUtil - [<clinit>,49] - isMultiInstance:false
+19:38:32.137 [main] INFO  c.r.a.RuoYiAuthApplication - [logStartupProfileInfo,655] - The following profiles are active: dev
+19:38:38.364 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9200"]
+19:38:38.365 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+19:38:38.366 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+19:38:38.788 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+19:38:49.253 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+19:38:49.264 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+19:38:49.910 [main] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+19:38:50.544 [main] INFO  c.a.n.client.naming - [call,64] - initializer namespace from System Property :null
+19:38:50.546 [main] INFO  c.a.n.client.naming - [call,73] - initializer namespace from System Environment :null
+19:38:50.547 [main] INFO  c.a.n.client.naming - [call,83] - initializer namespace from System Property :null
+19:38:53.923 [main] INFO  c.a.n.client.naming - [addListener,83] - [LISTENER] adding DEFAULT_GROUP@@ruoyi-auth with DEFAULT to listener map
+19:38:53.929 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9200"]
+19:38:54.009 [main] INFO  c.a.n.client.naming - [addBeatInfo,81] - [BEAT] adding beat: BeatInfo{port=9200, ip='192.168.1.4', weight=1.0, serviceName='DEFAULT_GROUP@@ruoyi-auth', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+19:38:54.011 [main] INFO  c.a.n.client.naming - [registerService,223] - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@ruoyi-auth with instance: Instance{instanceId='null', ip='192.168.1.4', port=9200, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+19:38:54.901 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,71] - nacos registry, DEFAULT_GROUP ruoyi-auth 192.168.1.4:9200 register finished
+19:38:54.962 [com.alibaba.nacos.client.naming.updater] INFO  c.a.n.client.naming - [processServiceJson,191] - new ips(1) service: DEFAULT_GROUP@@ruoyi-auth@@DEFAULT -> [{"instanceId":"192.168.1.4#9200#DEFAULT#DEFAULT_GROUP@@ruoyi-auth","ip":"192.168.1.4","port":9200,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+19:38:54.970 [com.alibaba.nacos.client.naming.updater] INFO  c.a.n.client.naming - [processServiceJson,228] - current ips:(1) service: DEFAULT_GROUP@@ruoyi-auth@@DEFAULT -> [{"instanceId":"192.168.1.4#9200#DEFAULT#DEFAULT_GROUP@@ruoyi-auth","ip":"192.168.1.4","port":9200,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+19:38:55.160 [main] INFO  c.r.a.RuoYiAuthApplication - [logStarted,61] - Started RuoYiAuthApplication in 27.465 seconds (JVM running for 32.987)
+19:38:55.176 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,262] - [fixed-127.0.0.1_8848] [subscribe] ruoyi-auth.yml+DEFAULT_GROUP
+19:38:55.178 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=ruoyi-auth.yml, group=DEFAULT_GROUP, cnt=1
+19:38:55.180 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,262] - [fixed-127.0.0.1_8848] [subscribe] ruoyi-auth-dev.yml+DEFAULT_GROUP
+19:38:55.181 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=ruoyi-auth-dev.yml, group=DEFAULT_GROUP, cnt=1
+19:38:55.181 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,262] - [fixed-127.0.0.1_8848] [subscribe] ruoyi-auth+DEFAULT_GROUP
+19:38:55.182 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=ruoyi-auth, group=DEFAULT_GROUP, cnt=1
+19:38:55.930 [RMI TCP Connection(9)-192.168.1.4] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:38:56.018 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [run,86] - received push data: {"type":"dom","data":"{\"hosts\":[{\"ip\":\"192.168.1.4\",\"port\":9200,\"valid\":true,\"healthy\":true,\"marked\":false,\"instanceId\":\"192.168.1.4#9200#DEFAULT#DEFAULT_GROUP@@ruoyi-auth\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"enabled\":true,\"weight\":1.0,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@ruoyi-auth\",\"ephemeral\":true}],\"dom\":\"DEFAULT_GROUP@@ruoyi-auth\",\"name\":\"DEFAULT_GROUP@@ruoyi-auth\",\"cacheMillis\":10000,\"lastRefTime\":1610969935983,\"checksum\":\"81992dd7fb9c909e77877358fdbda568\",\"useSpecifiedURL\":false,\"clusters\":\"DEFAULT\",\"env\":\"\",\"metadata\":{}}","lastRefTime":245985070566} from /192.168.1.4
+19:38:56.902 [RMI TCP Connection(10)-192.168.1.4] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+19:38:57.472 [RMI TCP Connection(10)-192.168.1.4] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+19:39:51.702 [http-nio-9200-exec-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: ruoyi-system.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+19:39:51.725 [http-nio-9200-exec-2] INFO  c.n.l.BaseLoadBalancer - [initWithConfig,197] - Client: ruoyi-system instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=ruoyi-system,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+19:39:51.734 [http-nio-9200-exec-2] INFO  c.n.l.DynamicServerListLoadBalancer - [enableAndInitLearnNewServersFeature,222] - Using serverListUpdater PollingServerListUpdater
+19:39:51.745 [http-nio-9200-exec-2] INFO  c.a.n.client.naming - [processServiceJson,191] - new ips(1) service: DEFAULT_GROUP@@ruoyi-system -> [{"instanceId":"192.168.1.4#9201#DEFAULT#DEFAULT_GROUP@@ruoyi-system","ip":"192.168.1.4","port":9201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-system","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+19:39:51.747 [http-nio-9200-exec-2] INFO  c.a.n.client.naming - [processServiceJson,228] - current ips:(1) service: DEFAULT_GROUP@@ruoyi-system -> [{"instanceId":"192.168.1.4#9201#DEFAULT#DEFAULT_GROUP@@ruoyi-system","ip":"192.168.1.4","port":9201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-system","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+19:39:51.765 [http-nio-9200-exec-2] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: ruoyi-system.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+19:39:51.768 [http-nio-9200-exec-2] INFO  c.n.l.DynamicServerListLoadBalancer - [restOfInit,150] - DynamicServerListLoadBalancer for client ruoyi-system initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=ruoyi-system,current list of Servers=[192.168.1.4:9201],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.4:9201;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 GMT+08:00 1970;	First connection made: Thu Jan 01 08:00:00 GMT+08:00 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@3c4ab543
+19:39:52.741 [PollingServerListUpdater-0] INFO  c.n.c.ChainedDynamicProperty - [checkAndFlip,115] - Flipping property: ruoyi-system.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+22:26:28.483 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+22:26:29.790 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - [<clinit>,212] - LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+22:26:29.835 [main] INFO  c.a.n.c.c.i.Limiter - [<clinit>,54] - limitTime:5.0
+22:26:29.882 [main] INFO  c.a.n.c.c.u.JvmUtil - [<clinit>,49] - isMultiInstance:false
+22:26:29.915 [main] INFO  c.r.a.RuoYiAuthApplication - [logStartupProfileInfo,655] - The following profiles are active: dev
+22:26:33.175 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9200"]
+22:26:33.180 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:26:33.182 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+22:26:33.373 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:26:34.765 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:26:34.770 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:26:35.093 [main] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+22:26:35.431 [main] INFO  c.a.n.client.naming - [call,64] - initializer namespace from System Property :null
+22:26:35.432 [main] INFO  c.a.n.client.naming - [call,73] - initializer namespace from System Environment :null
+22:26:35.433 [main] INFO  c.a.n.client.naming - [call,83] - initializer namespace from System Property :null
+22:26:36.885 [main] INFO  c.a.n.client.naming - [processServiceJson,191] - new ips(1) service: DEFAULT_GROUP@@ruoyi-auth@@DEFAULT -> [{"instanceId":"192.168.1.4#9200#DEFAULT#DEFAULT_GROUP@@ruoyi-auth","ip":"192.168.1.4","port":9200,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:26:36.894 [main] INFO  c.a.n.client.naming - [processServiceJson,228] - current ips:(1) service: DEFAULT_GROUP@@ruoyi-auth@@DEFAULT -> [{"instanceId":"192.168.1.4#9200#DEFAULT#DEFAULT_GROUP@@ruoyi-auth","ip":"192.168.1.4","port":9200,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:26:36.895 [main] INFO  c.a.n.client.naming - [addListener,83] - [LISTENER] adding DEFAULT_GROUP@@ruoyi-auth with DEFAULT to listener map
+22:26:36.900 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9200"]
+22:26:36.923 [main] INFO  c.a.n.client.naming - [shutdown,147] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+22:26:36.924 [main] INFO  c.a.n.client.naming - [shutdown,149] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+22:26:36.925 [main] INFO  c.a.n.client.naming - [shutdown,149] - com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown begin
+22:26:39.928 [main] INFO  c.a.n.client.naming - [shutdown,152] - com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown stop
+22:26:39.929 [main] INFO  c.a.n.client.naming - [shutdown,370] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+22:26:42.932 [main] INFO  c.a.n.client.naming - [shutdown,118] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+22:26:45.935 [main] INFO  c.a.n.client.naming - [shutdown,122] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+22:26:45.935 [main] INFO  c.a.n.client.naming - [shutdown,132] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+22:26:45.936 [main] INFO  c.a.n.client.naming - [shutdown,134] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+22:26:45.936 [main] INFO  c.a.n.client.naming - [shutdown,374] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+22:26:45.937 [main] INFO  c.a.n.client.naming - [shutdown,715] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+22:26:45.938 [main] INFO  c.a.n.client.naming - [shutdown,718] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+22:26:45.971 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Pausing ProtocolHandler ["http-nio-9200"]
+22:26:45.971 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+22:26:45.977 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Stopping ProtocolHandler ["http-nio-9200"]
+22:26:45.978 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Destroying ProtocolHandler ["http-nio-9200"]
+22:27:13.995 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+22:27:14.961 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - [<clinit>,212] - LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+22:27:15.004 [main] INFO  c.a.n.c.c.i.Limiter - [<clinit>,54] - limitTime:5.0
+22:27:15.041 [main] INFO  c.a.n.c.c.u.JvmUtil - [<clinit>,49] - isMultiInstance:false
+22:27:15.070 [main] INFO  c.r.a.RuoYiAuthApplication - [logStartupProfileInfo,655] - The following profiles are active: dev
+22:27:18.433 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9200"]
+22:27:18.435 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:27:18.435 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+22:27:18.686 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:27:20.243 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:27:20.249 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:27:20.594 [main] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+22:27:20.933 [main] INFO  c.a.n.client.naming - [call,64] - initializer namespace from System Property :null
+22:27:20.934 [main] INFO  c.a.n.client.naming - [call,73] - initializer namespace from System Environment :null
+22:27:20.935 [main] INFO  c.a.n.client.naming - [call,83] - initializer namespace from System Property :null
+22:27:22.316 [main] INFO  c.a.n.client.naming - [processServiceJson,191] - new ips(1) service: DEFAULT_GROUP@@ruoyi-auth@@DEFAULT -> [{"instanceId":"192.168.1.4#9200#DEFAULT#DEFAULT_GROUP@@ruoyi-auth","ip":"192.168.1.4","port":9200,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:27:22.323 [main] INFO  c.a.n.client.naming - [processServiceJson,228] - current ips:(1) service: DEFAULT_GROUP@@ruoyi-auth@@DEFAULT -> [{"instanceId":"192.168.1.4#9200#DEFAULT#DEFAULT_GROUP@@ruoyi-auth","ip":"192.168.1.4","port":9200,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:27:22.324 [main] INFO  c.a.n.client.naming - [addListener,83] - [LISTENER] adding DEFAULT_GROUP@@ruoyi-auth with DEFAULT to listener map
+22:27:22.329 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9200"]
+22:27:22.349 [main] INFO  c.a.n.client.naming - [shutdown,147] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+22:27:22.350 [main] INFO  c.a.n.client.naming - [shutdown,149] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+22:27:22.351 [main] INFO  c.a.n.client.naming - [shutdown,149] - com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown begin
+22:27:25.353 [main] INFO  c.a.n.client.naming - [shutdown,152] - com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown stop
+22:27:25.353 [main] INFO  c.a.n.client.naming - [shutdown,370] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+22:27:28.358 [main] INFO  c.a.n.client.naming - [shutdown,118] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+22:27:31.362 [main] INFO  c.a.n.client.naming - [shutdown,122] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+22:27:31.362 [main] INFO  c.a.n.client.naming - [shutdown,132] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+22:27:31.362 [main] INFO  c.a.n.client.naming - [shutdown,134] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+22:27:31.362 [main] INFO  c.a.n.client.naming - [shutdown,374] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+22:27:31.363 [main] INFO  c.a.n.client.naming - [shutdown,715] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+22:27:31.367 [main] INFO  c.a.n.client.naming - [shutdown,718] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+22:27:31.408 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Pausing ProtocolHandler ["http-nio-9200"]
+22:27:31.408 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+22:27:31.415 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Stopping ProtocolHandler ["http-nio-9200"]
+22:27:31.416 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Destroying ProtocolHandler ["http-nio-9200"]
+22:29:03.673 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+22:29:04.757 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - [<clinit>,212] - LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+22:29:04.798 [main] INFO  c.a.n.c.c.i.Limiter - [<clinit>,54] - limitTime:5.0
+22:29:04.839 [main] INFO  c.a.n.c.c.u.JvmUtil - [<clinit>,49] - isMultiInstance:false
+22:29:04.871 [main] INFO  c.r.a.RuoYiAuthApplication - [logStartupProfileInfo,655] - The following profiles are active: dev
+22:29:08.239 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9200"]
+22:29:08.240 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:29:08.241 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+22:29:08.452 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:29:10.339 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:29:10.346 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:29:10.791 [main] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+22:29:11.167 [main] INFO  c.a.n.client.naming - [call,64] - initializer namespace from System Property :null
+22:29:11.168 [main] INFO  c.a.n.client.naming - [call,73] - initializer namespace from System Environment :null
+22:29:11.169 [main] INFO  c.a.n.client.naming - [call,83] - initializer namespace from System Property :null
+22:29:12.967 [main] INFO  c.a.n.client.naming - [processServiceJson,191] - new ips(1) service: DEFAULT_GROUP@@ruoyi-auth@@DEFAULT -> [{"instanceId":"192.168.1.4#9200#DEFAULT#DEFAULT_GROUP@@ruoyi-auth","ip":"192.168.1.4","port":9200,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+22:29:12.974 [main] INFO  c.a.n.client.naming - [processServiceJson,228] - current ips:(1) service: DEFAULT_GROUP@@ruoyi-auth@@DEFAULT -> [{"instanceId":"192.168.1.4#9200#DEFAULT#DEFAULT_GROUP@@ruoyi-auth","ip":"192.168.1.4","port":9200,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+22:29:12.975 [main] INFO  c.a.n.client.naming - [addListener,83] - [LISTENER] adding DEFAULT_GROUP@@ruoyi-auth with DEFAULT to listener map
+22:29:12.980 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9200"]
+22:29:13.006 [main] INFO  c.a.n.client.naming - [shutdown,147] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+22:29:13.007 [main] INFO  c.a.n.client.naming - [shutdown,149] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+22:29:13.007 [main] INFO  c.a.n.client.naming - [shutdown,149] - com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown begin
+22:29:16.010 [main] INFO  c.a.n.client.naming - [shutdown,152] - com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown stop
+22:29:16.011 [main] INFO  c.a.n.client.naming - [shutdown,370] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+22:29:19.020 [main] INFO  c.a.n.client.naming - [shutdown,118] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+22:29:22.033 [main] INFO  c.a.n.client.naming - [shutdown,122] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+22:29:22.033 [main] INFO  c.a.n.client.naming - [shutdown,132] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+22:29:22.034 [main] INFO  c.a.n.client.naming - [shutdown,134] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+22:29:22.034 [main] INFO  c.a.n.client.naming - [shutdown,374] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+22:29:22.035 [main] INFO  c.a.n.client.naming - [shutdown,715] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+22:29:22.037 [main] INFO  c.a.n.client.naming - [shutdown,718] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+22:29:22.070 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Pausing ProtocolHandler ["http-nio-9200"]
+22:29:22.070 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+22:29:22.077 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Stopping ProtocolHandler ["http-nio-9200"]
+22:29:22.079 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Destroying ProtocolHandler ["http-nio-9200"]
+22:29:36.643 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [run,86] - received push data: {"type":"dom","data":"{\"hosts\":[],\"dom\":\"DEFAULT_GROUP@@ruoyi-auth\",\"name\":\"DEFAULT_GROUP@@ruoyi-auth\",\"cacheMillis\":10000,\"lastRefTime\":1610980176641,\"checksum\":\"81992dd7fb9c909e77877358fdbda568\",\"useSpecifiedURL\":false,\"clusters\":\"DEFAULT\",\"env\":\"\",\"metadata\":{}}","lastRefTime":10486643274752} from /192.168.1.4
+22:29:36.646 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [processServiceJson,197] - removed ips(1) service: DEFAULT_GROUP@@ruoyi-auth@@DEFAULT -> [{"instanceId":"192.168.1.4#9200#DEFAULT#DEFAULT_GROUP@@ruoyi-auth","ip":"192.168.1.4","port":9200,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:29:36.648 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [processServiceJson,228] - current ips:(0) service: DEFAULT_GROUP@@ruoyi-auth@@DEFAULT -> []
+22:29:50.671 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [run,86] - received push data: {"type":"dom","data":"{\"hosts\":[{\"ip\":\"192.168.1.4\",\"port\":9200,\"valid\":true,\"healthy\":true,\"marked\":false,\"instanceId\":\"192.168.1.4#9200#DEFAULT#DEFAULT_GROUP@@ruoyi-auth\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"enabled\":true,\"weight\":1.0,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@ruoyi-auth\",\"ephemeral\":true}],\"dom\":\"DEFAULT_GROUP@@ruoyi-auth\",\"name\":\"DEFAULT_GROUP@@ruoyi-auth\",\"cacheMillis\":10000,\"lastRefTime\":1610980190670,\"checksum\":\"81992dd7fb9c909e77877358fdbda568\",\"useSpecifiedURL\":false,\"clusters\":\"DEFAULT\",\"env\":\"\",\"metadata\":{}}","lastRefTime":10500672150316} from /192.168.1.4
+22:29:50.672 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [processServiceJson,191] - new ips(1) service: DEFAULT_GROUP@@ruoyi-auth@@DEFAULT -> [{"instanceId":"192.168.1.4#9200#DEFAULT#DEFAULT_GROUP@@ruoyi-auth","ip":"192.168.1.4","port":9200,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:29:50.674 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [processServiceJson,228] - current ips:(1) service: DEFAULT_GROUP@@ruoyi-auth@@DEFAULT -> [{"instanceId":"192.168.1.4#9200#DEFAULT#DEFAULT_GROUP@@ruoyi-auth","ip":"192.168.1.4","port":9200,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+22:32:08.782 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+22:32:10.139 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - [<clinit>,212] - LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+22:32:10.177 [main] INFO  c.a.n.c.c.i.Limiter - [<clinit>,54] - limitTime:5.0
+22:32:10.217 [main] INFO  c.a.n.c.c.u.JvmUtil - [<clinit>,49] - isMultiInstance:false
+22:32:10.250 [main] INFO  c.r.a.RuoYiAuthApplication - [logStartupProfileInfo,655] - The following profiles are active: dev
+22:32:13.257 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9200"]
+22:32:13.257 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:32:13.258 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+22:32:13.434 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:32:14.845 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:32:14.852 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:32:15.461 [main] INFO  c.a.c.s.SentinelWebAutoConfiguration - [addInterceptors,80] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+22:32:15.842 [main] INFO  c.a.n.client.naming - [call,64] - initializer namespace from System Property :null
+22:32:15.843 [main] INFO  c.a.n.client.naming - [call,73] - initializer namespace from System Environment :null
+22:32:15.844 [main] INFO  c.a.n.client.naming - [call,83] - initializer namespace from System Property :null
+22:32:17.170 [main] INFO  c.a.n.client.naming - [addListener,83] - [LISTENER] adding DEFAULT_GROUP@@ruoyi-auth with DEFAULT to listener map
+22:32:17.177 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9200"]
+22:32:17.227 [main] INFO  c.a.n.client.naming - [addBeatInfo,81] - [BEAT] adding beat: BeatInfo{port=9200, ip='192.168.1.4', weight=1.0, serviceName='DEFAULT_GROUP@@ruoyi-auth', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+22:32:17.229 [main] INFO  c.a.n.client.naming - [registerService,223] - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@ruoyi-auth with instance: Instance{instanceId='null', ip='192.168.1.4', port=9200, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+22:32:17.236 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,71] - nacos registry, DEFAULT_GROUP ruoyi-auth 192.168.1.4:9200 register finished
+22:32:17.406 [main] INFO  c.r.a.RuoYiAuthApplication - [logStarted,61] - Started RuoYiAuthApplication in 9.428 seconds (JVM running for 13.032)
+22:32:17.425 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,262] - [fixed-127.0.0.1_8848] [subscribe] ruoyi-auth.yml+DEFAULT_GROUP
+22:32:17.427 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=ruoyi-auth.yml, group=DEFAULT_GROUP, cnt=1
+22:32:17.428 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,262] - [fixed-127.0.0.1_8848] [subscribe] ruoyi-auth-dev.yml+DEFAULT_GROUP
+22:32:17.429 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=ruoyi-auth-dev.yml, group=DEFAULT_GROUP, cnt=1
+22:32:17.433 [main] INFO  c.a.n.c.c.i.ClientWorker - [addCacheDataIfAbsent,262] - [fixed-127.0.0.1_8848] [subscribe] ruoyi-auth+DEFAULT_GROUP
+22:32:17.434 [main] INFO  c.a.n.c.c.i.CacheData - [addListener,93] - [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=ruoyi-auth, group=DEFAULT_GROUP, cnt=1
+22:32:17.841 [RMI TCP Connection(3)-192.168.1.4] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:32:18.144 [RMI TCP Connection(5)-192.168.1.4] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+22:32:18.181 [com.alibaba.nacos.client.naming.updater] INFO  c.a.n.client.naming - [processServiceJson,191] - new ips(1) service: DEFAULT_GROUP@@ruoyi-auth@@DEFAULT -> [{"instanceId":"192.168.1.4#9200#DEFAULT#DEFAULT_GROUP@@ruoyi-auth","ip":"192.168.1.4","port":9200,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+22:32:18.185 [com.alibaba.nacos.client.naming.updater] INFO  c.a.n.client.naming - [processServiceJson,228] - current ips:(1) service: DEFAULT_GROUP@@ruoyi-auth@@DEFAULT -> [{"instanceId":"192.168.1.4#9200#DEFAULT#DEFAULT_GROUP@@ruoyi-auth","ip":"192.168.1.4","port":9200,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+22:32:18.242 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [run,86] - received push data: {"type":"dom","data":"{\"hosts\":[{\"ip\":\"192.168.1.4\",\"port\":9200,\"valid\":true,\"healthy\":true,\"marked\":false,\"instanceId\":\"192.168.1.4#9200#DEFAULT#DEFAULT_GROUP@@ruoyi-auth\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"enabled\":true,\"weight\":1.0,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@ruoyi-auth\",\"ephemeral\":true}],\"dom\":\"DEFAULT_GROUP@@ruoyi-auth\",\"name\":\"DEFAULT_GROUP@@ruoyi-auth\",\"cacheMillis\":10000,\"lastRefTime\":1610980338241,\"checksum\":\"81992dd7fb9c909e77877358fdbda568\",\"useSpecifiedURL\":false,\"clusters\":\"DEFAULT\",\"env\":\"\",\"metadata\":{}}","lastRefTime":10648242935888} from /192.168.1.4
+22:32:18.780 [RMI TCP Connection(5)-192.168.1.4] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+22:38:24.145 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [removeListener,104] - [LISTENER] removing DEFAULT_GROUP@@ruoyi-auth with DEFAULT from listener map
+22:38:24.149 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+22:38:24.164 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+22:38:24.164 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,86] - De-registering from Nacos Server now...
+22:38:24.165 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [removeBeatInfo,101] - [BEAT] removing beat: DEFAULT_GROUP@@ruoyi-auth:192.168.1.4:9200 from beat map.
+22:38:24.165 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [deregisterService,253] - [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@ruoyi-auth with instance: Instance{instanceId='null', ip='192.168.1.4', port=9200, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+22:38:24.167 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,106] - De-registration finished.
+22:38:24.168 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,147] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+22:38:25.170 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [run,86] - received push data: {"type":"dom","data":"{\"dom\":\"DEFAULT_GROUP@@ruoyi-auth\",\"name\":\"DEFAULT_GROUP@@ruoyi-auth\",\"cacheMillis\":10000,\"lastRefTime\":1610980705170,\"checksum\":\"57191f73beb2c0e37b9f5bc929b35d47\",\"useSpecifiedURL\":false,\"clusters\":\"DEFAULT\",\"env\":\"\",\"hosts\":[],\"metadata\":{}}","lastRefTime":11015171539265} from /192.168.1.4
+22:38:25.171 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [processServiceJson,197] - removed ips(1) service: DEFAULT_GROUP@@ruoyi-auth@@DEFAULT -> [{"instanceId":"192.168.1.4#9200#DEFAULT#DEFAULT_GROUP@@ruoyi-auth","ip":"192.168.1.4","port":9200,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@ruoyi-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+22:38:25.173 [com.alibaba.nacos.naming.push.receiver] INFO  c.a.n.client.naming - [processServiceJson,228] - current ips:(0) service: DEFAULT_GROUP@@ruoyi-auth@@DEFAULT -> []
+22:38:27.172 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,149] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+22:38:27.173 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,149] - com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown begin
+22:38:30.176 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,152] - com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown stop
+22:38:30.176 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,370] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+22:38:30.424 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,118] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+22:38:33.427 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,122] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+22:38:33.427 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,132] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+22:38:33.428 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,134] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+22:38:33.428 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,374] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+22:38:33.428 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,715] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+22:38:33.429 [SpringContextShutdownHook] INFO  c.a.n.client.naming - [shutdown,718] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
